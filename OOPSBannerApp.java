@@ -1,28 +1,24 @@
-/**
- * OOPSBannerApp UC4 – Banner using String Array and Loop
- *
- * Displays "OOPS" banner using String array and enhanced for-loop
- */
+/*
+ OOPSBannerApp UC5 - Render OOPS Banner using Inline Array Initialization
+*/
 
 public class OOPSBannerApp {
 
     public static void main(String[] args) {
 
-        // Create array to store banner lines
-        String[] banner = {
-
-            String.join("", "  ***  ", "  ***  ", " ***** ", " ***** "),
-            String.join("", " *   * ", " *   * ", " *   * ", " *     "),
-            String.join("", " *   * ", " *   * ", " *   * ", " *     "),
-            String.join("", " *   * ", " *   * ", " ***** ", " ***** "),
-            String.join("", " *   * ", " *   * ", " *     ", "     * "),
-            String.join("", " *   * ", " *   * ", " *     ", "     * "),
-            String.join("", "  ***  ", "  ***  ", " *     ", " ***** ")
-
+        // Declare and initialize array in one statement
+        String[] lines = {
+                String.join("", " *** ", " *** ", " *** ", "  *** "),
+                String.join("", "*   *", "*   *", "*   * ", "*   * "),
+                String.join("", "*   *", "*   *", "*   * ", "*    "),
+                String.join("", "*   *", "*   *", "**** ", "  *** "),
+                String.join("", "*   *", "*   *", "*     ", "    * "),
+                String.join("", "*   *", "*   *", "*     ", "*   * "),
+                String.join("", " *** ", " *** ", "*     ", " *** ")
         };
 
         // Print banner using enhanced for-loop
-        for (String line : banner) {
+        for (String line : lines) {
             System.out.println(line);
         }
     }
