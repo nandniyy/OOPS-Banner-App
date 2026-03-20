@@ -1,12 +1,6 @@
-/**
- * OOPSBannerApp UC6 – OOPS Banner Application
- * This version uses static helper methods to generate
- * patterns for O, P, and S letters.
- */
-
 public class OOPSBannerApp {
 
-    // Method to generate pattern for letter 'O'
+    // Method for O
     public static String[] getOPattern() {
         return new String[]{
             "  ***  ",
@@ -19,7 +13,7 @@ public class OOPSBannerApp {
         };
     }
 
-    // Method to generate pattern for letter 'P'
+    // Method for P
     public static String[] getPPattern() {
         return new String[]{
             "*****  ",
@@ -32,7 +26,7 @@ public class OOPSBannerApp {
         };
     }
 
-    // Method to generate pattern for letter 'S'
+    // Method for S
     public static String[] getSPattern() {
         return new String[]{
             " ***** ",
@@ -45,20 +39,14 @@ public class OOPSBannerApp {
         };
     }
 
-    // Main method
     public static void main(String[] args) {
 
-        String[] oPattern = getOPattern();
-        String[] pPattern = getPPattern();
-        String[] sPattern = getSPattern();
+        String[] o = getOPattern();
+        String[] p = getPPattern();
+        String[] s = getSPattern();
 
-        for (int i = 0; i < oPattern.length; i++) {
-            System.out.println(
-                oPattern[i] + "  " +
-                oPattern[i] + "  " +
-                pPattern[i] + "  " +
-                sPattern[i]
-            );
+        for (int i = 0; i < o.length; i++) {
+            System.out.println(o[i] + "  " + o[i] + "  " + p[i] + "  " + s[i]);
         }
     }
 }
